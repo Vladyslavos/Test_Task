@@ -1,6 +1,6 @@
 <h1 align = "center">Food app on React and TypeScript</h1>
 <p><b>Description: </b></p> 
-<a href = "">LIVE</a>
+<a href = "https://vladyslavos.github.io/Test_Task/">LIVE</a>
 
 <b>Technologies that I used:</b>
 
