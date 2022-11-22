@@ -3,6 +3,7 @@ import JobList from "./components/JobList/JobsList";
 import DetailedJob from "./components/DetailedJob/DetailedJob";
 import { useApi } from "./hooks/fetchApi";
 import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   const { jobs } = useApi();
