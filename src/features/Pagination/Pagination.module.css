@@ -1,0 +1,21 @@
+.pagination {
+  @apply flex w-full shadow-shadow rounded-lg justify-between text-xl font-bold bg-[#ffff] mt-[20px] mx-auto h-[40px] px-[18px] mb-[10px] max-w-[300px]
+  sm:h-[52px] sm:mt-[20px] sm:max-w-[350px] sm:px-[23px];
+}
+.link {
+  @apply text-[#70778B] flex text-center items-center justify-center cursor-pointer;
+}
+.active_link {
+  @apply flex text-center items-center  cursor-pointer
+  border-b-[2px] border-solid border-[#5876C5] text-[#5876C5]
+  sm:w-[12px] sm:leading-[45px] sm:mx-2;
+}
+.arrow_left {
+  @apply flex items-center cursor-pointer;
+}
+.arrow_right {
+  @apply flex items-center cursor-pointer;
+}
+.border {
+  @apply w-[1.2px] h-[32px] border-solid bg-[#DEE3EF];
+}
