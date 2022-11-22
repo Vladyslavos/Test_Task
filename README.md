@@ -1,4 +1,4 @@
-<h1 align = "center">Food app on React and TypeScript</h1>
+<h1 align = "center">Test task on React and TypeScript</h1>
 <p><b>Description: </b></p> 
 <a href = "https://vladyslavos.github.io/Test_Task/">LIVE</a>
 
