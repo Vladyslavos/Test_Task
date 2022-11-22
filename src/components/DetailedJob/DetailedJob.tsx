@@ -15,7 +15,7 @@ export default function DetailedJob() {
   const location = useLocation();
   const currentItem = location?.state?.item;
   const posted = `Posted ${moment
-    .duration(moment().diff(currentItem.createdAt))
+    .duration(moment().diff(currentItem?.createdAt))
     .humanize()} ago`;
   return (
     <motion.div
@@ -59,11 +59,11 @@ export default function DetailedJob() {
             viewport={{ once: true }}
           >
             <h2 className="text-[#3A4562] text-[24px] tracking-[-0.75px] font-bold max-w-[500px] md:max-w-full">
-              {currentItem.title}
+              {currentItem?.title}
             </h2>
             <div className="l:min-w-[115px] md:flex md:flex-col-reverse md:items-end">
               <p className="font-bold text-[#3A4562] text-[20px] tracking-[-0.625px] ">
-                € {currentItem.salary}
+                € {currentItem?.salary}
               </p>
               <p className="tracking-[-0.5625px] text-[#3A4562] text-[18px] ">
                 Brutto, per year
@@ -81,18 +81,18 @@ export default function DetailedJob() {
             variants={textAnimation}
             viewport={{ once: true }}
           >
-            {currentItem.description}
+            {currentItem?.description}
           </motion.p>
           <h2 className="mt-[20px] text-[#3A4562] text-[24px] tracking-[-0.75px] font-bold max-w-[480px] md:max-w-full">
             Responsibilities
           </h2>
           <p className=" flex flex-col  text-[#3A4562] text-[20px] tracking-[-0.625px]">
-            {currentItem.description}
+            {currentItem?.description}
           </p>
           <h2 className="mt-[20px] text-[#3A4562] text-[24px] tracking-[-0.75px] font-bold max-w-[480px] md:max-w-full">
             Compensation & Benefits:
           </h2>
-          {currentItem?.benefits?.map((benefit: string, i: number) => {
+          {currentItem?.benefits?.map((benefit: string) => {
             return (
               <ul className="text-lg" key={nanoid()}>
                 <li className="text-[#3A4562] list-disc">{benefit}</li>{" "}
@@ -114,29 +114,24 @@ export default function DetailedJob() {
               </h2>
               <h4 className="text-[18px] text-[#3A4562]">Employment type</h4>
               <div className="flex gap-[8px]">
-                {currentItem?.employment_type?.map(
-                  (employ: string, i: number) => {
-                    return (
-                      <button
-                        className="w-[229px] h-[54px] text-[#55699E] bg-[#b1bdda] rounded-[8px] font-bold hover:bg-[#bdc5d9] md:w-[122px] md:h-[50px]"
-                        key={nanoid()}
-                      >
-                        {employ}
-                      </button>
-                    );
-                  }
-                )}
+                {currentItem?.employment_type?.map((employ: string) => {
+                  return (
+                    <button
+                      className="w-[229px] h-[54px] text-[#55699E] bg-[#b1bdda] rounded-[8px] font-bold hover:bg-[#bdc5d9] md:w-[122px] md:h-[50px]"
+                      key={nanoid()}
+                    >
+                      {employ}
+                    </button>
+                  );
+                })}
               </div>
               <h4 className="text-[18px] text-[#3A4562] mt-[23px]">Benefits</h4>
 
               <div className="flex gap-[10px]">
-                {currentItem?.benefits?.map((benefit: string, i: number) => {
+                {currentItem?.benefits?.map((benefit: string) => {
                   return (
                     <ul className="text-lg" key={nanoid()}>
-                      <button
-                        className="w-[229px] h-[54px] text-[#988B49] bg-[#fff8d9] rounded-[8px] font-bold hover:bg-[#dec556] md:w-[134px] md:h-[50px]"
-                        key={currentItem.id}
-                      >
+                      <button className="w-[229px] h-[54px] text-[#988B49] bg-[#fff8d9] rounded-[8px] font-bold hover:bg-[#dec556] md:w-[134px] md:h-[50px]">
                         {benefit}
                       </button>
                     </ul>
@@ -157,7 +152,7 @@ export default function DetailedJob() {
                 Attached images
               </h2>
               <div className="flex  overflow-hidden">
-                {currentItem.pictures.map((picture: string, i: number) => (
+                {currentItem?.pictures?.map((picture: string, i: number) => (
                   <ul key={nanoid()}>
                     <img
                       src={picture}
@@ -176,25 +171,25 @@ export default function DetailedJob() {
         <footer className="map max-w-[400px] h-fit text-[#fff]  bg-[#3a3f55] rounded-[8px] mr-[20px] md:max-w-full md:w-full sm:mb-[40px]">
           <div className=" relative overflow-hidden flex flex-col gap-[8px] rounded-[8px]  px-[62px] pt-[31px] pb-[20px]">
             <h3 className="text-[#E7EAF0] font-bold text-[20px] tracking-[-0.625px] md:text-[16px]">
-              {currentItem.name}
+              {currentItem?.name}
             </h3>
             <p className="not-italic flex text-[18px]  tracking-[-0.5625px] md:text-[16px]">
               <img src={locationicon} className={"pr-[4px]"} />
-              {currentItem.address}
+              {currentItem?.address}
             </p>
             <a
               className="text-[18px] tracking-[-0.5625px] text-[#E8EBF3] md:text-[16px]"
-              href={`mailto:${currentItem.email}`}
+              href={`mailto:${currentItem?.email}`}
             >
-              {currentItem.email}
+              {currentItem?.email}
             </a>
             <a className="text-[18px] tracking-[-0.5625px] text-[#E8EBF3] md:font-proxima md:text-[16px]">
-              {currentItem.phone}
+              {currentItem?.phone}
             </a>
           </div>
           <div className="h-[218px]">
             <img
-              src={`https://maps.geoapify.com/v1/staticmap?style=osm-carto&width=600&height=400&center=lonlat:${currentItem.location.long},${currentItem.location.lat}&zoom=13.8823&apiKey=58c3021a685b43c6a3f17213e1ecbe14`}
+              src={`https://maps.geoapify.com/v1/staticmap?style=osm-carto&width=600&height=400&center=lonlat:${currentItem?.location.long},${currentItem?.location.lat}&zoom=13.8823&apiKey=58c3021a685b43c6a3f17213e1ecbe14`}
               alt="lon/lat coordinates img"
             ></img>
           </div>
