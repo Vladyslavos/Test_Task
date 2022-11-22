@@ -2,8 +2,8 @@
 <p><b>Description: </b>In this project, I completed a test task where I had to make a multi-page react application.</p> 
 <a href = "https://vladyslavos.github.io/Test_Task/">LIVE</a>
 
+![React_App_-_Google_Chrome_2022-11-22_15-16-49__online-video-cutter_com__AdobeExpress (1)](https://user-images.githubusercontent.com/67589338/203329043-1a39e676-28bb-4199-ac92-c41b510dae30.gif)
 
-![React App - Google Chrome 2022-11-22 15-16-49 (online-video-cutter com)](https://user-images.githubusercontent.com/67589338/203324357-bc717b80-6701-41ff-8de5-6adf5b2e6d1c.gif)
 
 <b>Technologies that I used:</b>
 
