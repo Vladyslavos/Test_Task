@@ -1,6 +1,8 @@
 <h1 align = "center">Test task on React and TypeScript</h1>
 <p><b>Description: </b></p> 
 <a href = "https://vladyslavos.github.io/Test_Task/">LIVE</a>
+
+
 ![React App - Google Chrome 2022-11-22 15-16-49 (online-video-cutter com)](https://user-images.githubusercontent.com/67589338/203324357-bc717b80-6701-41ff-8de5-6adf5b2e6d1c.gif)
 
 <b>Technologies that I used:</b>
