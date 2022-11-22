@@ -1,5 +1,5 @@
 <h1 align = "center">Test task on React and TypeScript</h1>
-<p><b>Description: In this project, I completed a test task where I had to make a multi-page react application.</b></p> 
+<p><b>Description: </b>In this project, I completed a test task where I had to make a multi-page react application.</p> 
 <a href = "https://vladyslavos.github.io/Test_Task/">LIVE</a>
 
 
