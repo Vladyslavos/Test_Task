@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<JobList jobs={jobs} />} />
-        <Route path="/*" element={<JobList jobs={jobs} />} />
-        <Route path="/:Id" element={<DetailedJob />} />
+        <Route path="/Test_Task" element={<JobList jobs={jobs} />} />
+        <Route path="/Test_Task/:Id" element={<DetailedJob />} />
       </Routes>
     </div>
   );

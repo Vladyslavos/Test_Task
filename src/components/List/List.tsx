@@ -32,7 +32,7 @@ export default function List(props: ItemProps) {
     >
       <img className={styles.picture} src={item.pictures[0]} alt={item.title} />
       <motion.div
-        className="flex w-full gap-[32px] md:flex-col-reverse md:gap-[14px]"
+        className="flex w-full gap-[32px] md:flex-col-reverse md:gap-[10px]"
         custom={2}
         variants={textAnimation}
       >

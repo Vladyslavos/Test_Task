@@ -1,6 +1,6 @@
 .wrapper {
-  @apply max-w-[1100px] mt-[8px] mx-auto flex gap-[32px] py-[24px] px-[16px] shadow-shadow rounded-[8px] w-full hover:shadow-slate-400 bg-[#ffff;]
-  md:items-center md:gap-[19px] md:py-[16px] md:h-[164px];
+  @apply max-w-[1100px] mt-[8px] mx-auto flex gap-[32px] py-[24px] px-[16px] shadow-shadow rounded-[8px] w-full hover:shadow-slate-400 bg-[#ffff]
+  md:items-center md:gap-[14px] md:py-[16px] md:h-[184px] overflow-hidden;
 }
 .picture {
   @apply min-w-[75px] w-[75px] h-[75px] min-h-[75px]  object-cover rounded-full

@@ -195,7 +195,7 @@ export default function DetailedJob() {
           </div>
         </footer>
       </div>
-      <Link to={"/"}>
+      <Link to={"/Test_Task"}>
         <motion.button
           className="flex text-[#3A4562] gap-[19px] w-fit  uppercase mt-[69px] px-[26px] py-[18px] bg-[#384564] bg-opacity-[0.14] rounded-[8px] text-[12px] hover:bg-[#b0c5e3] hover:text-[##3A4562] md:hidden"
           initial="hidden"
