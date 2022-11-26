@@ -20,7 +20,7 @@ export default function DetailedJob() {
   return (
     <motion.div
       className={
-        "max-w-[1300px] bg-[#ffff] mt-[0px] pt-[30px] pl-[30px] pb-[30px]"
+        "max-w-[1600px] bg-[#ffff] mt-[0px] pt-[30px] pl-[30px] pb-[30px]"
       }
       initial="hidden"
       whileInView="visible"
@@ -152,12 +152,12 @@ export default function DetailedJob() {
                 Attached images
               </h2>
               <div className="flex  overflow-hidden">
-                {currentItem?.pictures?.map((picture: string, i: number) => (
+                {currentItem?.pictures?.map((picture: string) => (
                   <ul key={nanoid()}>
                     <img
                       src={picture}
                       alt={"img"}
-                      className="w-[200px] h-[133px] rounded-lg mr-4 md:w-[140px] md:h-[100px] md:overflow-hidden md:mr-[6]"
+                      className="w-[200px] h-[133px] rounded-lg mr-4 md:w-[140px] md:h-[100px] md:overflow-hidden md:mr-[20px]"
                     ></img>
                   </ul>
                 ))}
@@ -168,7 +168,7 @@ export default function DetailedJob() {
         <h2 className="hidden mb-[21px] pb-[9px] border-b-[1px] border-[#3A4562] border-opacity-[0.13] font-bold text-[28px] text-[#3A4562] w-full md:block">
           Contacts
         </h2>
-        <footer className="map max-w-[400px] h-fit text-[#fff]  bg-[#3a3f55] rounded-[8px] mr-[20px] md:max-w-full md:w-full sm:mb-[40px]">
+        <footer className="w-[400px] h-fit text-[#fff]  bg-[#3a3f55] rounded-[8px] mr-[20px] lg:w-[260px] sm:mb-[40px]">
           <div className=" relative overflow-hidden flex flex-col gap-[8px] rounded-[8px]  px-[62px] pt-[31px] pb-[20px]">
             <h3 className="text-[#E7EAF0] font-bold text-[20px] tracking-[-0.625px] md:text-[16px]">
               {currentItem?.name}
@@ -187,7 +187,7 @@ export default function DetailedJob() {
               {currentItem?.phone}
             </a>
           </div>
-          <div className="h-[218px]">
+          <div className="w-[400px] lg:w-[260px]">
             <img
               src={`https://maps.geoapify.com/v1/staticmap?style=osm-carto&width=600&height=400&center=lonlat:${currentItem?.location.long},${currentItem?.location.lat}&zoom=13.8823&apiKey=58c3021a685b43c6a3f17213e1ecbe14`}
               alt="lon/lat coordinates img"
