@@ -1,6 +1,9 @@
-<h1 align = "center">Food app on React and TypeScript</h1>
-<p><b>Description: </b></p> 
-<a href = "">LIVE</a>
+<h1 align = "center">Test task on React and TypeScript</h1>
+<p><b>Description: </b>In this project, I completed a test task where I had to make a multi-page react application.</p> 
+<a href = "https://vladyslavos.github.io/Test_Task/">LIVE</a>
+
+![React_App_-_Google_Chrome_2022-11-22_15-16-49__online-video-cutter_com__AdobeExpress (1)](https://user-images.githubusercontent.com/67589338/203329043-1a39e676-28bb-4199-ac92-c41b510dae30.gif)
+
 
 <b>Technologies that I used:</b>
 
